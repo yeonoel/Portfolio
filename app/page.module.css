@@ -1,113 +1,133 @@
-/* Hero Section - Conteneur principal */
+/* ── HERO ──────────────────────────────────────── */
 .hero {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 100dvh;
   padding: 2rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #0F1623;
 }
 
-/* Contenu centré */
 .heroContent {
-  max-width: 800px;
+  max-width: 720px;
   text-align: center;
-  color: white;
 }
 
-/* Titre principal */
+/* Eyebrow */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #6B8CAE;
+  margin-bottom: 1.5rem;
+}
+
+.eyebrow::before,
+.eyebrow::after {
+  content: '';
+  display: inline-block;
+  width: 28px;
+  height: 1px;
+  background: #2E4D6B;
+}
+
+/* Titre */
 .heroTitle {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-weight: 600;
+  color: #E8EDF4;
   line-height: 1.2;
+  margin-bottom: 0.6rem;
+  letter-spacing: -0.02em;
 }
 
-/* Nom en surbrillance */
 .highlight {
-  color: #ffd700;
-  display: block;
+  color: #4A9EE8;
 }
 
 /* Sous-titre */
 .heroSubtitle {
-  font-size: 1.5rem;
+  font-size: 0.9rem;
   font-weight: 500;
+  color: #4A9EE8;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   margin-bottom: 1.5rem;
-  opacity: 0.9;
 }
 
 /* Description */
 .heroDescription {
-  font-size: 1.125rem;
-  margin-bottom: 2.5rem;
-  opacity: 0.85;
+  font-size: 1rem;
+  color: #7A90A8;
   line-height: 1.8;
+  max-width: 560px;
+  margin: 0 auto 2.5rem;
 }
 
-/* Conteneur des boutons */
+/* Boutons */
 .heroButtons {
   display: flex;
-  gap: 1rem;
+  gap: 0.875rem;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 2.5rem;
 }
 
-/* Style de base des boutons */
 .btn {
-  padding: 0.875rem 2rem;
-  border-radius: 8px;
+  padding: 0.75rem 1.75rem;
+  border-radius: 6px;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
   display: inline-block;
 }
 
-/* Bouton principal */
 .btnPrimary {
-  background-color: white;
-  color: #364AB0;
+  background: #4A9EE8;
+  color: #fff;
 }
 
 .btnPrimary:hover {
+  background: #3A8DD4;
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* Bouton secondaire */
 .btnSecondary {
-  background-color: transparent;
-  color: white;
-  border: 2px solid white;
+  background: transparent;
+  color: #7A90A8;
+  border: 1px solid #2E4D6B;
 }
 
 .btnSecondary:hover {
-  background-color: white;
-  color: #364AB0;
+  border-color: #4A9EE8;
+  color: #E8EDF4;
   transform: translateY(-2px);
 }
 
+/* Séparateur */
+.divider {
+  width: 40px;
+  height: 1px;
+  background: #2E4D6B;
+  margin: 0 auto 2rem;
+}
+
+/* Tags */
 .tagsContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
-  margin-top: 2rem;
+  gap: 0.5rem;
 }
 
-/* Responsive : mobile */
+/* ── RESPONSIVE ────────────────────────────────── */
 @media (max-width: 768px) {
   .heroTitle {
-    font-size: 2rem;
-  }
-
-  .heroSubtitle {
-    font-size: 1.25rem;
-  }
-
-  .heroDescription {
-    font-size: 1rem;
+    font-size: 1.75rem;
   }
 
   .heroButtons {
@@ -116,6 +136,6 @@
   }
 
   .btn {
-    width: 100%;
+    text-align: center;
   }
 }

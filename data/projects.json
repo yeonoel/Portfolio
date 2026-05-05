@@ -1,66 +1,70 @@
 [
   {
     "id": 1,
-    "slug": "taskflow-app",
-    "title": "TaskFlow - Gestionnaire de tâches",
-    "shortDescription": "Application de gestion de tâches avec système de priorités",
-    "longDescription": "TaskFlow est une application web moderne qui permet de gérer efficacement ses tâches quotidiennes. Elle offre un système de priorités avec code couleur, des notifications de deadline, et la possibilité de créer des catégories personnalisables. L'interface intuitive permet de glisser-déposer les tâches pour les réorganiser rapidement.",
-    "image": "/images/projets/Taskflow.png",
+    "slug": "kernel-app",
+    "title": "Kernel App",
+    "shortDescription": "Plateforme de création de sites E-commerce",
+    "longDescription": "Une solution complète permettant de générer et gérer des boutiques en ligne. Développée avec NestJS pour un backend robuste et scalable, couplée à React pour une interface d'administration intuitive.",
+    "image": "/images/projets/kernelaap.png",
     "tags": [
-      "Next.js",
+      "NestJS",
       "React",
-      "CSS Modules"
+      "PostgreSQL",
+      "Type"
     ],
-    "github": "https://github.com/votre-username/taskflow",
-    "demo": "https://taskflow-demo.vercel.app",
+    "github": "https://github.com/yeonoel/Kernelhub-store",
+    "demo": "https://github.com/yeonoel/Kernelhub-store",
     "featured": true
   },
   {
     "id": 2,
-    "slug": "weather-now",
-    "title": "WeatherNow - Application météo",
-    "shortDescription": "Météo en temps réel avec prévisions sur 7 jours",
-    "longDescription": "WeatherNow est une application météo élégante qui affiche les conditions actuelles et les prévisions détaillées. Elle utilise l'API OpenWeatherMap pour fournir des données précises et se base sur la géolocalisation pour afficher automatiquement la météo de votre région. L'interface s'adapte visuellement aux conditions météorologiques actuelles.",
-    "image": "https://placehold.co/800x500/png",
+    "slug": "techcampus",
+    "title": "TechCampus",
+    "shortDescription": "Le guide des meilleures écoles du numérique en Côte d’Ivoire",
+    "longDescription": "Une plateforme dédiée à l'orientation des étudiants ivoiriens, permettant d'explorer et de comparer les meilleures écoles d’informatique et du numérique. Développée avec une stack moderne NestJS, Prisma et React pour garantir rapidité et fiabilité.",
+    "image": "/images/projets/techcampus.png",
     "tags": [
       "React",
-      "API REST",
-      "Geolocation"
+      "NestJS",
+      "Prisma",
+      "PostgreSQL"
     ],
-    "github": "https://github.com/votre-username/weather-now",
-    "demo": "https://weather-now-demo.vercel.app",
+    "github": "https://github.com/yeonoel/front-university",
+    "demo": "https://vimeo.com/1189489700?share=copy&fl=sv&fe=ci",
     "featured": true
   },
   {
     "id": 3,
-    "slug": "recipe-box",
-    "title": "RecipeBox - Livre de recettes",
-    "shortDescription": "Plateforme de partage de recettes avec filtres avancés",
-    "longDescription": "RecipeBox est une application web pour découvrir et sauvegarder vos recettes préférées. Elle propose un système de recherche avancé par ingrédients, temps de préparation et difficulté. Les utilisateurs peuvent créer leur propre collection de recettes favorites et les organiser par catégories.",
-    "image": "https://placehold.co/800x500/png",
+    "slug": "infobtp",
+    "title": "InfoBTP",
+    "shortDescription": "Portail d'actualités et CMS dédié au secteur du BTP",
+    "longDescription": "Une plateforme complète d'actualités permettant la rédaction, la publication et la gestion d'articles spécialisés dans le bâtiment. Inclut un back-office pour la gestion des contenus et une base MongoDB pour une gestion flexible des données média.",
+    "image": "/images/projets/infobtp.png",
     "tags": [
-      "Next.js",
-      "CSS Grid",
-      "LocalStorage"
+      "Node.js",
+      "MongoDB",
+      "JavaScript",
+      "Html3",
+      "CSS5"
     ],
-    "github": "https://github.com/votre-username/recipe-box",
-    "demo": "https://recipe-box-demo.vercel.app",
-    "featured": false
+    "github": "https://github.com/yeonoel/InfoBTP",
+    "demo": "https://www.infobtp.net/",
+    "featured": true
   },
   {
-    "id": 4,
-    "slug": "portfolio-v1",
-    "title": "Portfolio v1",
-    "shortDescription": "Mon premier portfolio avec React",
-    "longDescription": "Ce portfolio représente mes débuts dans le développement web. Créé entièrement avec React, il présente mes premiers projets et mes compétences en développement frontend. Bien qu'il soit plus simple que la version actuelle, il témoigne de ma progression et de mon apprentissage continu.",
-    "image": "https://placehold.co/800x500/png",
+    "id": 5,
+    "slug": "joshuacooker",
+    "title": "Joshua Cooker",
+    "shortDescription": "Site vitrine officiel du chef JoshuaCooker",
+    "longDescription": "Plateforme élégante présentant l'univers culinaire du cuisinier JoshuaCooker. Le site permet de mettre en avant ses créations, son menu et de faciliter la prise de contact pour ses prestations, tout en restant fidèle à son identité sur les réseaux sociaux.",
+    "image": "/images/projets/joshuacooker.png",
     "tags": [
-      "React",
-      "Vite",
+      "JavaScript",
+      "HTML",
       "CSS"
     ],
-    "github": "https://github.com/votre-username/portfolio-v1",
-    "demo": "https://portfolio-v1-demo.vercel.app",
+    "github": "https://github.com/yeonoel/joshuaResto",
+    "demo": "https://vimeo.com/1189491477?share=copy&fl=sv&fe=ci",
     "featured": false
   }
 ]

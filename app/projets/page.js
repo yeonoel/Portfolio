@@ -11,9 +11,9 @@ export const metadata = {
 
 export default function Projects() {
     return (
-        <div className="container">
-            <h1 className="title">Mes Projets</h1>
-            <p className="description">
+        <div className={styles.container}>
+            <h1 className={styles.pageTitle}>Mes Projets</h1>
+            <p className={styles.pageDescription}>
                 Découvrez les projets sur lesquels j&apos;ai travaillé
             </p>
 

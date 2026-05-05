@@ -25,17 +25,18 @@ export default function Formations() {
                                 className={styles.image}
                                 width={300}
                                 height={200}
-                                preload
                             />
                         </div>
-                        <h2>{formation.title}</h2>
-                        <p>{formation.description}</p>
-                        <div className={styles.tags}>
-                            {formation.tags.map((tag, index) => (
-                                <span key={index}>{tag}</span>
-                            ))}
+                        <div className={styles.content}>
+                            <h2>{formation.title}</h2>
+                            <p>{formation.description}</p>
+                            <div className={styles.tags}>
+                                {formation.tags.map((tag, index) => (
+                                    <span key={index}>{tag}</span>
+                                ))}
+                            </div>
+                            <span className={styles.viewMore}>Voir la formation →</span>
                         </div>
-                        <span className={styles.viewMore}>Voir la formation →</span>
                     </Link>
                 ))}
             </div>

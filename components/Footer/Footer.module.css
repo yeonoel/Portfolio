@@ -1,18 +1,37 @@
+.footerWrap {
+    border-top: 1px solid #1E3050;
+    background: #0B1120;
+}
+
 .footer {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 1.25rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.copy {
+    font-size: 0.85rem;
+    color: #3D5470;
 }
 
 .links {
     display: flex;
-    gap: 1rem;
+    gap: 1.25rem;
 }
 
 .links a {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #6B8CAE;
     text-decoration: none;
-    color: #667eea;
+    transition: color 0.15s ease;
+}
+
+.links a:hover {
+    color: #4A9EE8;
 }

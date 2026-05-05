@@ -1,66 +1,78 @@
 .form {
-    background: white;
+    background: #0D1829;
+    border: 1px solid #1E3050;
+    border-radius: 8px;
     padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .formGroup {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
 }
 
 .formGroup label {
     display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-    color: #333;
+    margin-bottom: 0.4rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #6B8CAE;
+    letter-spacing: 0.02em;
 }
 
 .formGroup input,
 .formGroup textarea {
     width: 100%;
-    padding: 0.75rem;
-    border: 2px solid #e0e0e0;
-    border-radius: 8px;
-    font-size: 1rem;
+    padding: 0.7rem 0.9rem;
+    background: #0B1120;
+    border: 1px solid #1E3050;
+    border-radius: 6px;
+    font-size: 0.9rem;
     font-family: inherit;
-    transition: border-color 0.3s ease;
+    color: #E8EDF4;
+    transition: border-color 0.15s ease;
+    resize: vertical;
+}
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+    color: #2E4D6B;
 }
 
 .formGroup input:focus,
 .formGroup textarea:focus {
     outline: none;
-    border-color: #667eea;
+    border-color: #4A9EE8;
 }
 
 .submitBtn {
     width: 100%;
-    padding: 1rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    padding: 0.8rem;
+    background: #4A9EE8;
+    color: #fff;
     border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: 600;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: inherit;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: background 0.15s ease, transform 0.2s ease;
 }
 
-.submitBtn:hover {
+.submitBtn:hover:not(:disabled) {
+    background: #3A8DD4;
     transform: translateY(-2px);
 }
 
-
-.successMessage {
-    background: #d4edda;
-    color: #155724;
-    padding: 1rem;
-    border-radius: 8px;
-    margin-bottom: 1.5rem;
-    border: 1px solid #c3e6cb;
+.submitBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
-.submitBtn:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
+.successMessage {
+    background: #0B1F15;
+    color: #4CAF82;
+    border: 1px solid #1A4030;
+    padding: 0.85rem 1rem;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    margin-bottom: 1.25rem;
 }

@@ -21,7 +21,7 @@ export default function Navigation() {
         <nav className={styles.nav}>
             <div className={styles.container}>
                 <Link href="/" className={styles.logo} onClick={closeMenu}>
-                    Mon Portfolio
+                    Mon<span style={{ color: '#4A9EE8' }}>.</span>Portfolio
                 </Link>
 
                 {/* Bouton burger pour mobile */}

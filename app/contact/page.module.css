@@ -1,43 +1,75 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+}
+
+.title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #E8EDF4;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.4rem;
+}
+
+.description {
+    font-size: 0.95rem;
+    color: #3D5470;
+    margin-bottom: 2.5rem;
+}
+
 .contactWrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 3rem;
+    gap: 1.5rem;
+    align-items: start;
 }
 
 .contactInfo {
-    background: #f8f9fa;
-    padding: 2rem;
-    border-radius: 12px;
-    height: fit-content;
+    background: #0D1829;
+    border: 1px solid #1E3050;
+    border-radius: 8px;
+    padding: 1.5rem;
 }
 
 .contactInfo h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    color: #667eea;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #E8EDF4;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #1E3050;
 }
 
 .infoItem {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.infoItem:last-child {
+    margin-bottom: 0;
 }
 
 .infoItem strong {
     display: block;
-    margin-bottom: 0.25rem;
-    color: #333;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #3D5470;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 0.2rem;
 }
 
 .infoItem a {
-    color: #667eea;
+    font-size: 0.875rem;
+    color: #4A9EE8;
     text-decoration: none;
+    transition: color 0.15s ease;
 }
 
 .infoItem a:hover {
-    text-decoration: underline;
+    color: #E8EDF4;
 }
-
-
-
 
 @media (max-width: 768px) {
     .contactWrapper {

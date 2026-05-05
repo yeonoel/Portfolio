@@ -1,7 +1,27 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+}
+
 .content {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+}
+
+.bioHeader {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 
 .bio h2,
@@ -54,4 +74,36 @@
     left: 0;
     color: #364AB0;
     font-weight: bold;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem 1rem;
+    }
+
+    .bioHeader {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .avatar {
+        width: 80px;
+        height: 80px;
+    }
+
+    .bio h2,
+    .skills h2 {
+        font-size: 1.5rem;
+    }
+
+    .bio p {
+        font-size: 1rem;
+    }
+
+    .skillGrid {
+        grid-template-columns: 1fr;
+    }
 }
