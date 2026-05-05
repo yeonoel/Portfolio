@@ -1,57 +1,54 @@
-import styles from './page.module.css'
-export default function About() {
+import styles from "./page.module.css"
+import Tag from "../components/Tag/Tag";
+const technologies = [
+  "React",
+  "Angular",
+  "Node.js",
+  "TypeScript",
+  "NestJS",
+  "Spring Boot",
+  "Tailwind CSS",
+]
+
+export default function Home() {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>À propos de moi</h1>
+    <div className={styles.hero}>
+      <div className={styles.heroContent}>
 
-      <div className={styles.content}>
-        <div className={styles.bio}>
-          <h2>Qui suis-je ?</h2>
-          <p>
-            Je suis développeur Fullstack à dominance Backend, basé à Abidjan.
-            J&apos;ai 3 ans d&apos;expérience — en entreprise sur des projets
-            d&apos;envergure, et en solo où j&apos;ai conçu, construit et déployé
-            des produits complets de zéro à production.
-          </p>
-          <p>
-            Ce qui me différencie ? Je ne commence pas à coder avant de comprendre
-            le problème. <strong>Le problème est résolu avant d&apos;écrire
-              la première ligne de code.</strong> C&apos;est ma philosophie,
-            et c&apos;est ce qui rend mes produits utiles — pas juste fonctionnels.
-          </p>
+        <p className={styles.eyebrow}>Portfolio</p>
+
+        <h1 className={styles.heroTitle}>
+          Bonjour, je suis{" "}
+          <span className={styles.highlight}>Yeo Pevrogui Noel</span>
+        </h1>
+        <p className={styles.heroSubtitle}>Développeur Web Full-Stack</p>
+        <p className={styles.heroDescription}>
+          Je crée des applications web modernes, performantes et accessibles
+          avec React, Next.js et Node.js / NestJS, Angular et Spring Boot.
+        </p>
+
+        <div className={styles.heroButtons}>
+          <a href="/projets" className={`${styles.btn} ${styles.btnPrimary}`}>
+            Voir mes projets
+          </a>
+          <a href="/contact" className={`${styles.btn} ${styles.btnSecondary}`}>
+            Me contacter
+          </a>
         </div>
 
-        <div className={styles.skills}>
-          <h2>Compétences</h2>
-          <div className={styles.skillGrid}>
-            <div className={styles.skillCategory}>
-              <h3>Backend</h3>
-              <ul>
-                <li>NestJS & Spring Boot</li>
-                <li>Node.js & TypeScript</li>
-                <li>TypeORM & Prisma</li>
-              </ul>
-            </div>
+        <div className={styles.divider} />
 
-            <div className={styles.skillCategory}>
-              <h3>Frontend</h3>
-              <ul>
-                <li>React & Next.js</li>
-                <li>Tailwind CSS</li>
-              </ul>
-            </div>
-
-            <div className={styles.skillCategory}>
-              <h3>DevOps & BDD</h3>
-              <ul>
-                <li>PostgreSQL & MongoDB</li>
-                <li>Docker & CI/CD</li>
-                <li>Vercel & Render</li>
-              </ul>
-            </div>
-          </div>
+        <div className={styles.tagsContainer}>
+          {technologies.map((tech, index) => (
+            <Tag key={index}>{tech}</Tag>
+          ))}
         </div>
+
       </div>
     </div>
   )
 }
+
+
+
+

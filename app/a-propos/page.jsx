@@ -9,7 +9,7 @@ export default function About() {
                 <div className={styles.bio}>
                     <div className={styles.bioHeader}>
                         <img
-                            src="/images/photo.png"
+                            src="/images/photo.jpg"
                             alt="Yeo Noel"
                             className={styles.avatar}
                         />
