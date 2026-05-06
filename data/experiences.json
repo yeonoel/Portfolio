@@ -30,8 +30,8 @@
     {
         "entreprise": "TechCampus",
         "poste": "Développeur Fullstack",
-        "debut": "Jan 2026",
-        "fin": "Présent",
+        "debut": "Oct 2025",
+        "fin": "Déc 2025",
         "initiale": "K",
         "techs": [
             "React",
@@ -42,20 +42,6 @@
             "CI/CD",
             "vercel",
             "render"
-        ]
-    },
-    {
-        "entreprise": "Synelia",
-        "poste": "Backend Developer",
-        "debut": "Jan 2025",
-        "fin": "Déc 2025",
-        "initiale": "S",
-        "techs": [
-            "Spring Boot",
-            "Java",
-            "PostgreSQL",
-            "Docker",
-            "MySQL"
         ]
     },
     {
@@ -70,6 +56,20 @@
             "TypeScript",
             "PostgreSQL",
             "Flyway"
+        ]
+    },
+    {
+        "entreprise": "Synelia",
+        "poste": "Backend Developer",
+        "debut": "Jan 2025",
+        "fin": "Déc 2025",
+        "initiale": "S",
+        "techs": [
+            "Spring Boot",
+            "Java",
+            "PostgreSQL",
+            "Docker",
+            "MySQL"
         ]
     },
     {
