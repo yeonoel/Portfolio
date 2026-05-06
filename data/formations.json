@@ -6,7 +6,7 @@
         "description": "Formation en Master science Informatique. Approfondissez vos connaissances en informatique et developpez vos compétences techniques.",
         "tags": [
             "Bac +5",
-            "3 ans"
+            "5 ans"
         ],
         "image": "/images/formations/ensit.jpg"
     },
@@ -16,7 +16,7 @@
         "slug": "software-engineering",
         "description": "ALX Software Engineering (Specialization: Full Stack). Programme intensif d'ingénierie logicielle (70h+/semaine) sur 12 mois, couvrant les fondamentaux du développement logiciel, la maîtrise de plusieurs langages de programmation, et la collaboration en équipe pour créer des applications robustes et évolutives.",
         "tags": [
-            "Bac +2 (Niveau 5)",
+            "Certification (Niveau 5)",
             "12 mois"
         ],
         "image": "/images/formations/alxafrica.png"
@@ -28,7 +28,7 @@
         "description": "Formation en Réseau informatique & Telecommunication. Apprenez à concevoir, installer et gérer les réseaux informatiques.",
         "tags": [
             "Bac +2",
-            "9 mois"
+            "24 mois"
         ],
         "image": "/images/formations/groupeloko.jpg"
     }
