@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import styles from './page.module.css'
 
 export default function About() {
@@ -8,10 +9,12 @@ export default function About() {
             <div className={styles.content}>
                 <div className={styles.bio}>
                     <div className={styles.bioHeader}>
-                        <img
-                            src="/images/photo.jpg"
+                        <Image
+                            src="/images/photo.png"
                             alt="Yeo Noel"
                             className={styles.avatar}
+                            width={200}
+                            height={200}
                         />
                         <div>
                             <p>
