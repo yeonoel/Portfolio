@@ -21,7 +21,7 @@ const poppins = Poppins({
 })
 
 export const metadata = {
-  title: "Portfolio de yeo pevrogui noel",
+  title: "Yeo pevrogui noel",
   description: "Développeur web passionné par la résolution de problèmes. Découvrez mes projets, formations et compétences en développement web full-stack.",
 }
 
