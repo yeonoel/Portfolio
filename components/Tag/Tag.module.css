@@ -1,7 +1,7 @@
 .tag {
-    background: #111F33;
-    border: 1px solid #1E3050;
-    color: #6B8CAE;
+    background: var(--bg-tag);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
     padding: 0.25rem 0.7rem;
     border-radius: 4px;
     font-size: 0.78rem;
@@ -12,6 +12,6 @@
 }
 
 .tag:hover {
-    border-color: #4A9EE8;
-    color: #E8EDF4;
+    border-color: var(--accent);
+    color: var(--text-primary);
 }

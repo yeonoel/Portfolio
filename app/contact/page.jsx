@@ -36,9 +36,18 @@ export default function Contact() {
                             Mon profil GitHub
                         </a>
                     </div>
+                    <div className={styles.infoItem}>
+                        <strong>WhatsApp :</strong>
+
+                        <a href="https://wa.me/2250000000000?text=Bonjour%20j%27ai%20vu%20votre%20portfolio%20et%20je%20..."
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Me contacter sur WhatsApp
+                        </a>
+                    </div>
                 </div>
-                <ContactForm />
             </div>
-        </div>
+        </div >
     );
 }

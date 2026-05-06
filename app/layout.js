@@ -2,6 +2,8 @@ import { Inter, Poppins } from 'next/font/google'
 import "./globals.css"
 import Navigation from '../components/Navigation/Navigation'
 import Footer from '../components/Footer/Footer'
+import { ThemeProvider } from '@/components/ThemeProvider/ThemePriver'
+
 
 // Configurer Inter pour le texte courant
 const inter = Inter({
@@ -23,14 +25,17 @@ export const metadata = {
   description: "Développeur web passionné par la résolution de problèmes. Découvrez mes projets, formations et compétences en développement web full-stack.",
 }
 
+
 export default function RootLayout({ children }) {
   return (
     <html lang="fr" className={`${inter.variable} ${poppins.variable}`}>
       <body className={inter.className}>
-        <Navigation />
-        <main>{children}</main>
-        <Footer />
+        <ThemeProvider>
+          <Navigation />
+          <main>{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }

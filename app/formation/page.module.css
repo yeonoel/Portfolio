@@ -7,7 +7,7 @@
 .title {
     font-size: 1.75rem;
     font-weight: 600;
-    color: #E8EDF4;
+    color: var(--text-primary);
     letter-spacing: -0.02em;
     margin-bottom: 0.4rem;
 }
@@ -25,8 +25,8 @@
 }
 
 .card {
-    background: #0D1829;
-    border: 1px solid #1E3050;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
     border-radius: 8px;
     text-decoration: none;
     color: inherit;
@@ -38,7 +38,7 @@
 }
 
 .card:hover {
-    border-color: #4A9EE8;
+    border-color: var(--accent);
     transform: translateY(-4px);
 }
 
@@ -46,7 +46,7 @@
     width: 100%;
     height: 160px;
     overflow: hidden;
-    background: #0B1120;
+    background: var(--bg-image);
     flex-shrink: 0;
 }
 
@@ -73,7 +73,7 @@
 .card h2 {
     font-size: 1.05rem;
     font-weight: 600;
-    color: #E8EDF4;
+    color: var(--text-primary);
     margin-bottom: 0.5rem;
     letter-spacing: -0.01em;
 }
@@ -81,7 +81,7 @@
 .card p {
     flex: 1;
     font-size: 0.875rem;
-    color: #4A6580;
+    color: var(--text-secondary);
     line-height: 1.7;
     margin-bottom: 1rem;
 }
@@ -94,9 +94,9 @@
 }
 
 .tags span {
-    background: #111F33;
-    border: 1px solid #1E3050;
-    color: #6B8CAE;
+    background: var(--bg-tag);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
     padding: 0.25rem 0.7rem;
     border-radius: 4px;
     font-size: 0.75rem;
@@ -107,6 +107,6 @@
     display: inline-block;
     font-size: 0.82rem;
     font-weight: 500;
-    color: #4A9EE8;
+    color: var(--accent);
     letter-spacing: 0.02em;
 }

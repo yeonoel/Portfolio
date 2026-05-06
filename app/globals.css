@@ -4,13 +4,46 @@
   box-sizing: border-box;
 }
 
+/* ── Thème sombre (défaut) ── */
+:root {
+  --bg-primary: #0F1623;
+  --bg-card: #0D1829;
+  --bg-tag: #111F33;
+  --border: #1E3050;
+  --border-hover: #4A9EE8;
+  --text-primary: #E8EDF4;
+  --text-secondary: #7A90A8;
+  --text-muted: #3D5470;
+  --text-tag: #6B8CAE;
+  --accent: #4A9EE8;
+  --accent-hover: #3A8DD4;
+  --transition-theme: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* ── Thème clair ── */
+[data-theme="light"] {
+  --bg-primary: #F4F7FB;
+  --bg-card: #FFFFFF;
+  --bg-tag: #EBF0F7;
+  --border: #D0DCE8;
+  --border-hover: #4A9EE8;
+  --text-primary: #0F1623;
+  --text-secondary: #4A5E72;
+  --text-muted: #8A9AB0;
+  --text-tag: #4A6580;
+  --accent: #2A7EC8;
+  --accent-hover: #1A6DB8;
+  --transition-theme: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
 body {
   font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
   line-height: 1.6;
-  color: #E8EDF4;
-  background-color: #0F1623;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  transition: var(--transition-theme);
 }
 
 main {
-  min-height: 100dvh;
+  min-height: 0;
 }

@@ -14,7 +14,7 @@ export default function Formations() {
             <div className={styles.grid}>
                 {formationsData.map((formation) => (
                     <Link
-                        href={`/formation/${formation.slug}`}
+                        href={`/formation/#`}
                         key={formation.slug}
                         className={styles.card}
                     >
@@ -35,7 +35,6 @@ export default function Formations() {
                                     <span key={index}>{tag}</span>
                                 ))}
                             </div>
-                            <span className={styles.viewMore}>Voir la formation →</span>
                         </div>
                     </Link>
                 ))}

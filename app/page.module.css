@@ -3,9 +3,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100dvh;
+  padding: 5rem 2rem;
   padding: 2rem;
-  background: #0F1623;
+  background: var(--bg-card);
 }
 
 .heroContent {
@@ -38,7 +38,7 @@
 .heroTitle {
   font-size: clamp(2rem, 4.5vw, 3rem);
   font-weight: 600;
-  color: #E8EDF4;
+  color: var(--text-primary);
   line-height: 1.2;
   margin-bottom: 0.6rem;
   letter-spacing: -0.02em;
@@ -124,6 +124,36 @@
   gap: 0.5rem;
 }
 
+/* Bloc nom + photo */
+.heroTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.heroText {
+  text-align: left;
+}
+
+.heroImageWrapper {
+  flex-shrink: 0;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #1E3050;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 /* ── RESPONSIVE ────────────────────────────────── */
 @media (max-width: 768px) {
   .heroTitle {
@@ -137,5 +167,22 @@
 
   .btn {
     text-align: center;
+  }
+}
+
+/* Mobile : photo au-dessus, tout centré */
+@media (max-width: 540px) {
+  .heroTop {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .heroText {
+    text-align: center;
+  }
+
+  .heroImageWrapper {
+    width: 110px;
+    height: 110px;
   }
 }

@@ -1,10 +1,11 @@
-/* ── NAV ───────────────────────────────────────── */
+/* ── NAV ── */
 .nav {
-    background: #0B1120;
-    border-bottom: 1px solid #1E3050;
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border);
     position: sticky;
     top: 0;
     z-index: 100;
+    transition: var(--transition-theme);
 }
 
 .container {
@@ -17,17 +18,17 @@
     align-items: center;
 }
 
-/* ── LOGO ──────────────────────────────────────── */
+/* ── LOGO ── */
 .logo {
     font-size: 1rem;
     font-weight: 600;
-    color: #E8EDF4;
+    color: var(--text-primary);
     text-decoration: none;
     letter-spacing: 0.02em;
     z-index: 101;
 }
 
-/* ── MENU ──────────────────────────────────────── */
+/* ── MENU ── */
 .menu {
     display: flex;
     gap: 0.25rem;
@@ -36,10 +37,10 @@
     padding: 0;
 }
 
-/* ── LIENS ─────────────────────────────────────── */
+/* ── LIENS ── */
 .link {
     text-decoration: none;
-    color: #6B8CAE;
+    color: var(--text-tag);
     font-size: 0.9rem;
     font-weight: 500;
     padding: 0.4rem 0.85rem;
@@ -49,13 +50,13 @@
 }
 
 .link:hover {
-    color: #E8EDF4;
-    background: #1A2535;
+    color: var(--text-primary);
+    background: var(--bg-tag);
 }
 
 .active {
-    color: #E8EDF4;
-    background: #1A2535;
+    color: var(--text-primary);
+    background: var(--bg-tag);
     position: relative;
 }
 
@@ -66,11 +67,30 @@
     left: 0.85rem;
     right: 0.85rem;
     height: 2px;
-    background: #4A9EE8;
+    background: var(--accent);
     border-radius: 2px 2px 0 0;
 }
 
-/* ── BURGER ────────────────────────────────────── */
+/* ── BOUTON THÈME ── */
+.themeToggle {
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.35rem 0.55rem;
+    cursor: pointer;
+    font-size: 0.95rem;
+    line-height: 1;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+    margin-left: auto;
+    margin-right: 0.75rem;
+}
+
+.themeToggle:hover {
+    border-color: var(--accent);
+    transform: scale(1.1) rotate(15deg);
+}
+
+/* ── BURGER ── */
 .burger {
     display: none;
     flex-direction: column;
@@ -85,7 +105,7 @@
 .burger span {
     width: 24px;
     height: 2px;
-    background: #6B8CAE;
+    background: var(--text-tag);
     transition: all 0.25s ease;
     border-radius: 2px;
     display: block;
@@ -93,7 +113,7 @@
 
 .burger span.burgerOpen:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
-    background: #E8EDF4;
+    background: var(--text-primary);
 }
 
 .burger span.burgerOpen:nth-child(2) {
@@ -102,11 +122,15 @@
 
 .burger span.burgerOpen:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
-    background: #E8EDF4;
+    background: var(--text-primary);
 }
 
-/* ── MOBILE ────────────────────────────────────── */
+/* ── MOBILE ── */
 @media (max-width: 768px) {
+    .themeToggle {
+        margin-right: 0.5rem;
+    }
+
     .burger {
         display: flex;
     }
@@ -118,8 +142,8 @@
         height: 100vh;
         width: 70%;
         max-width: 280px;
-        background: #0B1120;
-        border-left: 1px solid #1E3050;
+        background: var(--bg-card);
+        border-left: 1px solid var(--border);
         flex-direction: column;
         gap: 0;
         padding: 5rem 1.25rem 2rem;
@@ -145,7 +169,7 @@
     }
 
     .active {
-        border-left: 3px solid #4A9EE8;
+        border-left: 3px solid var(--accent);
         padding-left: calc(1rem - 3px);
         border-radius: 0 6px 6px 0;
     }

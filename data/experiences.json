@@ -1,0 +1,101 @@
+[
+    {
+        "entreprise": "Kernelaap",
+        "poste": "Fondateur & Développeur Fullstack",
+        "debut": "Jan 2026",
+        "fin": "Présent",
+        "initiale": "K",
+        "techs": [
+            "Next.js",
+            "React",
+            "Nest.js",
+            "TypeScript",
+            "Typeorm",
+            "PostgreSQL"
+        ]
+    },
+    {
+        "entreprise": "Infobtp",
+        "poste": "Fullstack Developer",
+        "debut": "Jan 2024",
+        "fin": "Présent",
+        "initiale": "I",
+        "techs": [
+            "React",
+            "Node.js",
+            "MongoDB",
+            "Express.js"
+        ]
+    },
+    {
+        "entreprise": "TechCampus",
+        "poste": "Développeur Fullstack",
+        "debut": "Jan 2026",
+        "fin": "Présent",
+        "initiale": "K",
+        "techs": [
+            "React",
+            "Nest.js",
+            "prisma",
+            "TypeScript",
+            "PostgreSQL",
+            "CI/CD",
+            "vercel",
+            "render"
+        ]
+    },
+    {
+        "entreprise": "Synelia",
+        "poste": "Backend Developer",
+        "debut": "Jan 2025",
+        "fin": "Déc 2025",
+        "initiale": "S",
+        "techs": [
+            "Spring Boot",
+            "Java",
+            "PostgreSQL",
+            "Docker",
+            "MySQL"
+        ]
+    },
+    {
+        "entreprise": "Prosol",
+        "poste": "Fullstack Developer",
+        "debut": "Déc 2024",
+        "fin": "Août 2025",
+        "initiale": "P",
+        "techs": [
+            "Angular",
+            "Spring Boot",
+            "TypeScript",
+            "PostgreSQL",
+            "Flyway"
+        ]
+    },
+    {
+        "entreprise": "Gomycode",
+        "poste": "Fullstack Javascript Instructor",
+        "debut": "Jan 2024",
+        "fin": "Août 2024",
+        "initiale": "G",
+        "techs": [
+            "JavaScript",
+            "React",
+            "Node.js"
+        ]
+    },
+    {
+        "entreprise": "Alx Africa",
+        "poste": "Software Engineer",
+        "debut": "Mar 2022",
+        "fin": "Avr 2025",
+        "initiale": "A",
+        "techs": [
+            "Python",
+            "C",
+            "Linux",
+            "Shell",
+            "Node.js"
+        ]
+    }
+]

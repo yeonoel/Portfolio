@@ -1,6 +1,6 @@
 .footerWrap {
     border-top: 1px solid #1E3050;
-    background: #0B1120;
+    background: var(--bg-card);
 }
 
 .footer {
