@@ -29,7 +29,7 @@ export default function Contact() {
                     <div className={styles.infoItem}>
                         <strong>GitHub :</strong>
                         <a
-                            href="https://github.com/ypn-kernel"
+                            href="https://github.com/yeonoel"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -39,7 +39,7 @@ export default function Contact() {
                     <div className={styles.infoItem}>
                         <strong>WhatsApp :</strong>
 
-                        <a href="https://wa.me/2250000000000?text=Bonjour%20j%27ai%20vu%20votre%20portfolio%20et%20je%20..."
+                        <a href="https://wa.me/2250565676413?text=Bonjour%20j%27ai%20vu%20votre%20portfolio%20et%20je%20..."
                             target="_blank"
                             rel="noopener noreferrer"
                         >

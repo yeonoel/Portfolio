@@ -25,7 +25,7 @@ export default function Home() {
                 Yeo <br /> Pevrogui Noel
               </span>
             </h1>
-            <p className={styles.heroSubtitle}>Développeur Web Full-Stack</p>
+            <p className={styles.heroSubtitle}>Développeur Fullstack. Curieux de nature.</p>
           </div>
 
           <div className={styles.heroImageWrapper}>
@@ -41,8 +41,8 @@ export default function Home() {
         </div>
 
         <p className={styles.heroDescription}>
-          Je crée des applications web modernes, performantes et accessibles
-          avec React, Next.js et Node.js / NestJS, Angular et Spring Boot.
+          Software Engineer Fullstack | 3 ans d'XP. Compétent en TypeScript, React, Nest.js et Java.
+          Orienté principes logiciels, OOP et structures de données.
         </p>
 
         <div className={styles.heroButtons}>
