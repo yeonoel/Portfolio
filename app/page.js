@@ -49,7 +49,7 @@ export default function Home() {
           <a href="/experiences" className={`${styles.btn} ${styles.btnPrimary}`}>
             Voir mes expériences
           </a>
-          <a href="/contact" className={`${styles.btn} ${styles.btnSecondary}`}>
+          <a href="/projets" className={`${styles.btn} ${styles.btnSecondary}`}>
             Voir mes projets
           </a>
         </div>
