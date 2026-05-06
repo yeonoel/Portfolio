@@ -48,7 +48,7 @@ export default function About() {
                         <div className={styles.skillCategory}>
                             <h3>Frontend</h3>
                             <ul>
-                                <li>React & Next.js</li>
+                                <li>React, Angular</li>
                                 <li>Tailwind CSS</li>
                             </ul>
                         </div>
