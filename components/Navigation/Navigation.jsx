@@ -17,7 +17,7 @@ export default function Navigation() {
         <nav className={styles.nav}>
             <div className={styles.container}>
                 <Link href="/" className={styles.logo} onClick={closeMenu}>
-                    YPN<span style={{ color: '#4A9EE8' }}>.</span>Kernel
+                    YPN<span style={{ color: '#4A9EE8' }}>.</span>
                 </Link>
 
                 {/* Bouton thème */}
