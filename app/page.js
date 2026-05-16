@@ -1,21 +1,21 @@
-import styles from "./page.module.css"
+import styles from "./page.module.css";
 import Tag from "../components/Tag/Tag";
 import Image from "next/image";
 const technologies = [
-  "React",
+  "React.js",
+  "Next.js",
   "Angular",
   "Node.js",
   "TypeScript",
   "NestJS",
   "Spring Boot",
   "Tailwind CSS",
-]
+];
 
 export default function Home() {
   return (
     <div className={styles.hero}>
       <div className={styles.heroContent}>
-
         {/* Bloc nom + photo côte à côte */}
         <div className={styles.heroTop}>
           <div className={styles.heroText}>
@@ -25,7 +25,9 @@ export default function Home() {
                 Yeo <br /> Pevrogui Noel
               </span>
             </h1>
-            <p className={styles.heroSubtitle}>Développeur Fullstack. Curieux de nature.</p>
+            <p className={styles.heroSubtitle}>
+              Développeur Fullstack. Curieux de nature.
+            </p>
           </div>
 
           <div className={styles.heroImageWrapper}>
@@ -41,12 +43,16 @@ export default function Home() {
         </div>
 
         <p className={styles.heroDescription}>
-          Software Engineer Fullstack | 3 ans d'XP. Compétent en TypeScript, React, Nest.js et Java.
-          Orienté principes logiciels, OOP et structures de données.
+          Software Engineer Fullstack | 3 ans d'XP. Compétent en TypeScript,
+          React, Nest.js et Java. Orienté principes logiciels, OOP et structures
+          de données.
         </p>
 
         <div className={styles.heroButtons}>
-          <a href="/experiences" className={`${styles.btn} ${styles.btnPrimary}`}>
+          <a
+            href="/experiences"
+            className={`${styles.btn} ${styles.btnPrimary}`}
+          >
             Voir mes expériences
           </a>
           <a href="/projets" className={`${styles.btn} ${styles.btnSecondary}`}>
@@ -61,11 +67,7 @@ export default function Home() {
             <Tag key={index}>{tech}</Tag>
           ))}
         </div>
-
       </div>
     </div>
   );
 }
-
-
-
